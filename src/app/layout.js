@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Providers from "./Providers";  
+import SearchBox from "./components/SearchBox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
           <Navbar />
 
           {/* search bar */}
+          <SearchBox />
           {children}
         </Providers>
       </body>
